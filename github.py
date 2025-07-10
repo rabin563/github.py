@@ -55,5 +55,4 @@ rows = cursor.fetchall()
 for item in rows:
     print(item)
 
-# Close connection
 conn.close()
