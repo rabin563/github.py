@@ -43,12 +43,12 @@ conn.commit()
 
 # Delete Rabin
 cursor.execute("""
-DELETE FROM student
+DELETE FROM studentgit 
 WHERE name = 'Rabin'
 """)
 conn.commit()
 
-# Show final data after update and delete
+# Show final data after update and deletegit remote add origin url
 print("\nAfter Update and Delete:")
 cursor.execute("SELECT * FROM student")
 rows = cursor.fetchall()
@@ -57,7 +57,3 @@ for item in rows:
 
 # Close connection
 conn.close()
-
-cursor.execute(""" select name from student
-           
-""") 
